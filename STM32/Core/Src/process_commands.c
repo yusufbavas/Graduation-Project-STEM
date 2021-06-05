@@ -55,8 +55,8 @@ void process_commands(){
 					variable *v2 = find_variable(parameter);
 					param = v2->value;
 				}
-				HAL_Delay(ROUND_TO_INT(DISTANCE_TO_MS2(param,(speed < 100 ? speed: 100))));
-
+				HAL_Delay(ROUND_TO_INT(DISTANCE_TO_MS3(param,(speed < 100 ? speed: 100))));
+				//HAL_Delay(param);
 				HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);
 				HAL_GPIO_WritePin(GPIOA,GPIO_PIN_1,GPIO_PIN_RESET);
 
@@ -98,7 +98,8 @@ void process_commands(){
 					variable *v2 = find_variable(parameter);
 					param = v2->value;
 				}
-				HAL_Delay(ROUND_TO_INT(DISTANCE_TO_MS2(param,(speed < 100 ? speed: 100))));
+				HAL_Delay(ROUND_TO_INT(DISTANCE_TO_MS3(param,(speed < 100 ? speed: 100))));
+				//HAL_Delay(param);
 
 				HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);
 				HAL_GPIO_WritePin(GPIOA,GPIO_PIN_1,GPIO_PIN_RESET);

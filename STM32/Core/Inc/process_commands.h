@@ -34,6 +34,7 @@
 
 #define DISTANCE_TO_MS(x,y) (x / (0.019 * y / 100.0 )) + (210.5 * y / 100.0) / 2
 #define DISTANCE_TO_MS2(x,y) (x * 50) * (100.0 / ((float) y))
+#define DISTANCE_TO_MS3(x,y) (x / (0.0215 * y / 100.0 )) + (186.0465116 * y / 100.0) / 2.0
 #define ROUND_TO_INT(f) ((int)(f >= 0.0 ? (f + 0.5) : (f - 0.5)))
 //#define DEGREE_TO_MS_v0(x) ((x + 0.057 * 35.1 / 2) / 0.057)
 #define DEGREE_TO_MS(x) ((x / 0.05032618) + (23.33333345 / 2))

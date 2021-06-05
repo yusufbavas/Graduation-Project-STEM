@@ -1,4 +1,4 @@
 process_commands.c:3:6:read_commands	16	static
-process_commands.c:16:6:process_commands	112	static
-process_commands.c:323:6:find_parameters	32	static
-process_commands.c:344:11:find_variable	24	static
+process_commands.c:16:6:process_commands	120	static
+process_commands.c:324:6:find_parameters	32	static
+process_commands.c:345:11:find_variable	24	static
